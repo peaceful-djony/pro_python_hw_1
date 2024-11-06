@@ -31,3 +31,10 @@ services:
       - model
     volumes:
       - ./logs/:/usr/src/app/logs/
+
+  plot:
+    build:
+      context: ./plot
+    restart: always
+    volumes:
+      - ./logs/:/usr/src/app/logs/
